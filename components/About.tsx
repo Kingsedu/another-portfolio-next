@@ -49,7 +49,11 @@ const About = () => {
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
   return (
-    <motion.section style={{ backgroundImage }} className="py-32 text-white">
+    <motion.section
+      style={{ backgroundImage }}
+      className="py-32 text-white"
+      id="about"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
